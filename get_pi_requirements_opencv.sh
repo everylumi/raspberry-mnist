@@ -29,3 +29,6 @@ sudo apt -y install libatlas-base-dev gfortran
 #6 for HDF5 datasets and Qt GUIs
 sudo apt -y install libhdf5-dev libhdf5-serial-dev libhdf5-103
 sudo apt -y install libqtgui4 libqtwebkit4 libqt4-test python3-pyqt5
+
+#7 python3
+sudo apt -y install python3-dev
