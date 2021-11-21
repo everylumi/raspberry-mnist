@@ -5,10 +5,11 @@ This is a method of recognizing handwritten numbers using Raspberry Pi 3/4.
 
 <center> Mnist Dataset </center>
 
-![image](https://github.com/everylumi/raspberrypi-mnist/doc/MnistExamples.png)
+![image](https://github.com/everylumi/raspberrypi-mnist/blob/master/doc/MnistExamples.png)
 
 
 ## requirements 
+
 - Raspberry Pi 3 or 4
 - Python 3.7 or above
 - OpenCV 4
@@ -25,8 +26,8 @@ cd raspberrypi-mnist
 
 #### Step 2 update Raspberry Pi OS to install OpenCV/TensorFlow
 ```sh
-    sudo apt update
-    sudo apt upgrade
+sudo apt update
+sudo apt upgrade
 ```
 
 #### Step 3 install OpenCV (skip, if installed already)
@@ -49,13 +50,12 @@ python3
 >>> tf.__version__
 ```
 
-
 ## Usage
 ```sh
 cd ~/raspberrypi-mnist
 python3 TFLite_mnist_webcam.py --modeldir=mnist_model
 ```
-![image](https://github.com/everylumi/raspberrypi-mnist/doc/2021-11-21.png)
+![image](https://github.com/everylumi/raspberrypi-mnist/blob/master/doc/2021-11-21.png)
 
 
 ## License  
