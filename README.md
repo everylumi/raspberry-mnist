@@ -5,7 +5,7 @@ This is a method of recognizing handwritten numbers using Raspberry Pi 3/4.
 
 <center> Mnist Dataset </center>
 
-![image](https://github.com/everylumi/raspberrypi-mnist/blob/master/doc/MnistExamples.png)
+![image](https://github.com/everylumi/raspberrypi-mnist/blob/main/doc/MnistExamples.png)
 
 
 ## requirements 
@@ -55,7 +55,7 @@ python3
 cd ~/raspberrypi-mnist
 python3 TFLite_mnist_webcam.py --modeldir=mnist_model
 ```
-![image](https://github.com/everylumi/raspberrypi-mnist/blob/master/doc/2021-11-21.png)
+![image](https://github.com/everylumi/raspberrypi-mnist/blob/main/doc/2021-11-21.png)
 
 
 ## License  
