@@ -1,6 +1,7 @@
 # raspberrypi-mnist
 This is a method of recognizing handwritten numbers using Raspberry Pi 3/4.
 
+
 ## Training Data
 
 <center> Mnist Dataset </center>
@@ -11,9 +12,11 @@ This is a method of recognizing handwritten numbers using Raspberry Pi 3/4.
 ## requirements 
 
 - Raspberry Pi 3 or 4
+- 2021-05-07-raspios-buster
 - Python 3.7 or above
 - OpenCV 4
 - TensorFlow 2.1.0 or above
+
 
 ## Installation
 
@@ -30,16 +33,20 @@ sudo apt update
 sudo apt upgrade
 ```
 
-#### Step 3 install OpenCV (skip, if installed already)
+#### Step 3 install OpenCV (skip, if installed already) 
+: 30minutes to install on RaspberryPi3
 ```sh
 bash get_pi_requirements_opencv.sh
 pip3 install opencv-contrib-python==4.1.0.25
 ```
 
 #### Step 4 install tensorflow (skip, if installed already)
+: 25minutes to install on RaspberryPi3  
 ```sh
 bash install_tensorflow-2.4.0.sh
 ```
+FYI, tensorflow releases  
+https://github.com/lhelontra/tensorflow-on-arm/releases
 
 #### Step 5 check version
 ```
@@ -49,6 +56,7 @@ python3
 >>> import tensorflow as tf
 >>> tf.__version__
 ```
+
 
 ## Usage
 ```sh
