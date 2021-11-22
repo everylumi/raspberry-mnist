@@ -41,7 +41,7 @@ pip3 install opencv-contrib-python==4.1.0.25
 ```
 
 #### Step 4 install tensorflow (skip, if installed already)
-: 25minutes to install on RaspberryPi3  
+: 15minutes to install on RaspberryPi3  
 ```sh
 bash install_tensorflow-2.4.0.sh
 ```
