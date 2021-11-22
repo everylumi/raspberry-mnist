@@ -16,12 +16,13 @@ sudo apt -y install libxvidcore-dev libx264-dev
 sudo apt -y install libfontconfig1-dev libcairo2-dev
 sudo apt -y install libgdk-pixbuf2.0-dev libpango1.0-dev
 sudo apt -y install libgtk2.0-dev libgtk-3-dev
+sudo apt -y install libjasper-dev
 
-sudo apt -y install libtbb2 libtbb-dev libdc1394-22-dev
-sudo apt -y install libv4l-dev v4l-utils
-sudo apt -y install libopenblas-dev libatlas-base-dev libblas-dev
-sudo apt -y install libprotobuf-dev libgoogle-glog-dev libgflags-dev
-sudo apt -y install protobuf-compiler
+#sudo apt -y install libtbb2 libtbb-dev libdc1394-22-dev
+#sudo apt -y install libv4l-dev v4l-utils
+#sudo apt -y install libopenblas-dev libatlas-base-dev libblas-dev
+#sudo apt -y install libprotobuf-dev libgoogle-glog-dev libgflags-dev
+#sudo apt -y install protobuf-compiler
 
 #5 for optimized further
 sudo apt -y install libatlas-base-dev gfortran
