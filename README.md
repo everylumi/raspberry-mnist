@@ -12,6 +12,7 @@ This is a method of recognizing handwritten numbers using Raspberry Pi 3/4.
 ## requirements 
 
 - Raspberry Pi 3 or 4
+- Raspberry Pi OS buster (recommended)
 - Python 3.7 or above
 - OpenCV 4
 - TensorFlow 2.1.0 or above
