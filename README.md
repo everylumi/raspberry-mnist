@@ -34,14 +34,14 @@ sudo apt upgrade
 ```
 
 #### Step 3 install OpenCV (skip, if installed already) 
-: 50minutes to install on RaspberryPi3
+: 25minutes to install on RaspberryPi3
 ```sh
 bash get_pi_requirements_opencv.sh
 pip3 install opencv-python==4.5.3.56 
 ```
 
 #### Step 4 install tensorflow (skip, if installed already)
-: 30minutes to install on RaspberryPi3  
+: 15minutes to install on RaspberryPi3  
 ```sh
 # for OS buster
 bash install_tensorflow-2.4.0.sh
