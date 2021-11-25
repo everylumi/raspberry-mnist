@@ -13,7 +13,7 @@ This is a method of recognizing handwritten numbers using Raspberry Pi 3/4.
 
 - Raspberry Pi 3 or 4
 - Raspberry Pi OS buster (recommended)
-- Python 3.7 or above
+- Python 3.7
 - OpenCV 4
 - TensorFlow 2.1.0 or above
 
@@ -43,11 +43,8 @@ pip3 install opencv-python==4.5.3.56
 #### Step 4 install tensorflow (skip, if installed already)
 : 30minutes to install on RaspberryPi3  
 ```sh
-# for OS buster (faster installation)
+# for OS buster
 bash install_tensorflow-2.4.0.sh
-
-# for OS bullseys and for all
-bash install_tensorflow-2.6.0.sh
 ```
 FYI, tensorflow releases  
 https://github.com/lhelontra/tensorflow-on-arm/releases
