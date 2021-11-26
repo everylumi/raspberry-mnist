@@ -40,8 +40,7 @@ sudo -H pip3 install h5py==3.1.0
 pip3 install gdown
 
 # download the wheel
-gdown https://drive.google.com/u/0/uc?export=download&confirm=D_1a&id=1zf4NasP-rB0FfaQ0DFJxsky04d-Ang9R
-
+gdown https://drive.google.com/u/0/uc?export=download&confirm=E_w0&id=1c-fOVdpq-o7e4DSX3HiFDD15S1WwbZK9
 
 # install TensorFlow 2.6.0 (± 68 min @1500 MHz)
 sudo -H pip3 install tensorflow-2.6.0-cp39-cp39-linux_aarch64.whl
