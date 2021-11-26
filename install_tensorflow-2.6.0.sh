@@ -36,9 +36,9 @@ sudo -H pip3 install Cython
 # install h5py with Cython version 0.29.23 (± 15 min @1500 MHz)
 sudo -H pip3 install h5py==3.1.0
 
-# install TensorFlow 2.7.0 (± 68 min @1500 MHz)
-wget https://github.com/KumaTea/tensorflow-aarch64/releases/download/v2.7/tensorflow-2.7.0-cp39-cp39-linux_aarch64.whl
-sudo -H pip3 install tensorflow-2.7.0-cp39-cp39-linux_aarch64.whl
-rm tensorflow-2.7.0-cp39-cp39-linux_aarch64.whl
+# install TensorFlow 2.6.0 (± 68 min @1500 MHz)
+wget https://github.com/KumaTea/tensorflow-aarch64/releases/download/v2.6/tensorflow-2.6.0-cp39-cp39-linux_aarch64.whl
+sudo -H pip3 tensorflow-2.6.0-cp39-cp39-linux_aarch64.whl
+rm tensorflow-2.6.0-cp39-cp39-linux_aarch64.whl
 
 fi
