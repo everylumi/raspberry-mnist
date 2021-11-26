@@ -47,7 +47,7 @@ pip3 install opencv-python==4.5.3.56
 bash install_tensorflow-2.4.0.sh
 
 # for OS bullseye - 64bit only
-bash install_tensorflow-2.6.0.sh
+bash install_tensorflow-2.7.0.sh
 ```  
 FYI, tensorflow releases  
 https://github.com/lhelontra/tensorflow-on-arm/releases  
