@@ -50,8 +50,9 @@ bash install_tensorflow-2.4.0.sh
 bash install_tensorflow-2.6.0.sh
 ```  
 FYI, tensorflow releases  
-https://github.com/lhelontra/tensorflow-on-arm/releases  
-https://github.com/Qengineering/TensorFlow-Raspberry-Pi_64-bit
+https://github.com/lhelontra/tensorflow-on-arm/releases
+https://github.com/KumaTea/tensorflow-aarch64/releases    
+https://github.com/Qengineering/TensorFlow-Raspberry-Pi_64-bit  
 
 
 #### Step 5 check version
