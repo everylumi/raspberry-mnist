@@ -43,4 +43,4 @@ sudo pip3 install --upgrade pip setuptools wheel
 sudo pip3 install --upgrade pip
 
 #9 numpy
-sudo pip3 install -U numpy
+#sudo pip3 install -U numpy
