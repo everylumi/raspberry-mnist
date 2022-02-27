@@ -1,8 +1,18 @@
 #!/bin/bash
 
+# Pre Configuation after Raspi OS
+#GPU Memory Up to 128
+#sudo raspi-config -> Performance Options -> GPU Memory -> input 128
+
+# In case of raspberry pi 4
+#EEPROM Check
+#sudo rpi-eeprom-update  -> check, BOOTLOADER: up to date
+#EEPROM Update
+#sudo rpi-eeprom-update -a && reboot
+
 # Get packages required for OpenCV
 #1 developer tools
-sudo apt -y install build-essential cmake pkg-config
+sudo apt -y install build-essential cmake git unzip pkg-config
 
 #2 image I/O packages
 sudo apt -y install libjpeg-dev libtiff5-dev libpng-dev
@@ -15,16 +25,18 @@ sudo apt -y install libxvidcore-dev libx264-dev
 #4 which is used to display images to our screen and build basic GUIs.
 sudo apt -y install libfontconfig1-dev libcairo2-dev
 sudo apt -y install libgdk-pixbuf2.0-dev libpango1.0-dev
-sudo apt -y install libgtk2.0-dev libgtk-3-dev
+sudo apt -y install libgtk2.0-dev libcanberra-gtk* libgtk-3-dev
 sudo apt -y install libjasper-dev
 
 version=$(getconf LONG_BIT)
 if [ $version == "64" ]; then
-#sudo apt -y install libtbb2 libtbb-dev libdc1394-22-dev
-#sudo apt -y install libv4l-dev v4l-utils
-#sudo apt -y install libopenblas-dev libatlas-base-dev libblas-dev
-#sudo apt -y install libprotobuf-dev libgoogle-glog-dev libgflags-dev
-#sudo apt -y install protobuf-compiler
+echo ""
+echo "** 64 bit OS *********************"
+sudo apt -y install libtbb2 libtbb-dev libdc1394-22-dev
+sudo apt -y install libv4l-dev v4l-utils
+sudo apt -y install libopenblas-dev libatlas-base-dev libblas-dev
+sudo apt -y install libprotobuf-dev libgoogle-glog-dev libgflags-dev
+sudo apt -y install protobuf-compiler
 fi
 
 #5 for optimized further
@@ -38,9 +50,17 @@ sudo apt -y install libqtwebkit4 libqt4-test python3-pyqt5
 #7 python3
 sudo apt -y install python3-dev
 
-#8 upgrade wheel
-sudo pip3 install --upgrade pip setuptools wheel
-sudo pip3 install --upgrade pip
+#8 Optional, install Qt5 to beautiful OpenCV GUI
+sudo apt-get install qt5-default -y
 
-#9 numpy
-sudo pip3 install -U numpy
+#9 upgrade wheel
+python3 -m pip install --upgrade pip
+#sudo -H pip3 install --upgrade pip setuptools wheel
+#sudo -H pip3 install --upgrade pip
+
+#10 install the PiCamera API
+pip3 install "picamera[array]"
+
+#11 numpy
+#pip3 install -U numpy
+pip3 install numpy==1.19.5
