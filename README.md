@@ -51,11 +51,12 @@ pip3 install opencv-python==4.5.3.56
 
 #### Step 4 install tensorflow (skip, if installed already) 
 ```sh
-# for OS buster
-bash install_tensorflow-2.4.0.sh
+pip3 install tensorflow
+
+bash install_tensorflow-2.4.0.sh  --> don't use, error occur
 
 # for OS bullseye - 64bit only
-bash install_tensorflow-2.6.0.sh
+bash install_tensorflow-2.6.0.sh  --> don't use, error occur
 ```  
 FYI, tensorflow releases  
 https://github.com/lhelontra/tensorflow-on-arm/releases  
